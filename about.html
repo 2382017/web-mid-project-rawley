@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full height for the body */
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            margin: 100px auto 0;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            flex: 1; /* Allow the container to grow and push footer down */
+        }
+        .header-section {
+            text-align: center;
+        }
+        .bio-img {
+            max-width: 100%; /* Responsive image width */
+            height: auto;
+            aspect-ratio: 3 / 4; /* Maintain aspect ratio */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 15px;
+        }
+        .hobbies-section {
+            margin-top: 40px;
+        }
+        .hobbies-section ul, .hobbies-section ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .bio-img {
+                max-width: 80%; /* Adjust image size on medium screens */
+            }
+            h1 {
+                font-size: 2em; /* Smaller heading on medium screens */
+            }
+            h2 {
+                font-size: 1.5em; /* Smaller subheading */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em; /* Smaller heading on small screens */
+            }
+            h2 {
+                font-size: 1.3em; /* Smaller subheading */
+            }
+            h4, h5, h6 {
+                font-size: 1em; /* Smaller heading */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT PAGE</a>
+        <a href="myHoliday.html">My Holiday</a>
+        <a href="registration.html">Registration</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="header-section">
+            <h1>Rawley Jaiang Naibaho (2382017)</h1>
+            <img src="FOTO-PROFILE.jpg" alt="Photo of Rawley" class="bio-img">
+            <h2>Software Engineer & Enthusiast</h2>
+            <h3>Short Bio</h3>
+            <p>Hello! My name is Rawley Jaiang Naibaho, a passionate software engineer who loves solving complex problems with code. I have a deep interest in new technologies, especially in web development and AI. I'm always learning and excited to explore new ideas.</p>
+        </div>
+
+        <div class="hobbies-section">
+            <h4>My Hobbies & Interests</h4>
+            <h5>Sports & Outdoors</h5>
+            <ul>
+                <li>Fishing with my brother</li>
+                <li>Playing volleyball with friends</li>
+                <li>Hiking and exploring nature</li>
+            </ul>
+
+            <h5>Tech Interests</h5>
+            <ol>
+                <li>Web Development</li>
+                <li>Artificial Intelligence</li>
+                <li>Blockchain Technology</li>
+            </ol>
+
+            <h6>Other Activities</h6>
+            <p>I also enjoy spending time with family, working on personal projects, and connecting with friends on social media.</p>
+        </div>
+
+        <div class="footer">
+            <p>Follow me on Instagram <a href="https://www.instagram.com/rwl_well?igsh=aGR4d2FzbHVqM3N3">@rwl_well</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rawley Jaiang Naibaho. All rights reserved.</p>
+    </footer>
+</body>
+</html>

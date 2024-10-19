@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MID PROJECT</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes at least full height */
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px; /* Added horizontal padding */
+            flex: 1; /* Allow the container to grow and push footer down */
+            margin-top: 60px; /* Space for fixed navbar */
+        }
+
+        .container img {
+            width: 100%; /* Responsive width */
+            max-width: 300px; /* Maximum width */
+            height: auto;
+            border-radius: 50%;
+            margin: 20px 0; /* Space around the image */
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative; /* Ensure footer stays at the bottom */
+        }
+
+        @media (max-width: 768px) {
+            .navbar a {
+                padding: 10px; /* Smaller padding on mobile */
+            }
+
+            .container h1 {
+                font-size: 2em; /* Smaller heading on mobile */
+            }
+
+            .container p {
+                font-size: 1em; /* Smaller text on mobile */
+            }
+
+            .container img {
+                max-width: 80%; /* Allow image to be larger on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar a {
+                padding: 8px; /* Even smaller padding */
+            }
+
+            .container h1 {
+                font-size: 1.5em; /* Smaller heading on very small devices */
+            }
+
+            .container p {
+                font-size: 0.9em; /* Smaller text on very small devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT PAGE</a>
+        <a href="myHoliday.html">My Holiday</a>
+        <a href="registration.html">Registration</a>
+    </div>
+
+    <div class="container">
+        <img src="FOTO-PROFILE.jpg" alt="Profile Photo">
+        <h1>Rawley Jaiang Naibaho (2382017)</h1>
+        <p>Hi, I'm Rawley, passionate about technology and coding. I love learning new things and working on creative projects that help people solve problems efficiently.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rawley Jaiang Naibaho. All rights reserved.</p>
+    </footer>
+</body>
+</html>

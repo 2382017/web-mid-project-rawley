@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Holiday Gallery</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures body takes full height */
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 100px auto 0; /* Adjust for navbar */
+            padding: 20px;
+            flex: 1; /* Allow container to grow and push footer down */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjust spacing */
+        }
+        .gallery-item {
+            margin: 5px;
+            flex: 1 1 calc(33.333% - 10px); /* Responsive item sizing */
+            box-sizing: border-box;
+        }
+        .gallery img {
+            width: 100%; /* Responsive image width */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+        footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 10px); /* 2 items per row on medium screens */
+            }
+            h1 {
+                font-size: 2em; /* Smaller heading on medium screens */
+            }
+            p {
+                font-size: 1em; /* Smaller paragraph text */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                flex: 1 1 100%; /* 1 item per row on small screens */
+            }
+            h1 {
+                font-size: 1.5em; /* Smaller heading on small screens */
+            }
+            p {
+                font-size: 0.9em; /* Smaller paragraph text */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT PAGE</a>
+        <a href="myHoliday.html">My Holiday</a>
+        <a href="registration.html">Registration</a>
+    </div>
+
+    <!-- Container for Gallery -->
+    <div class="container">
+        <h1>My Holiday Gallery</h1>
+        <p><strong>Nama:</strong> Rawley Jaiang Naibaho | <strong>NIM:</strong> 2382017</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="holiday.jpg" alt="Catching Fish">
+            </div>
+            <div class="gallery-item">
+                <img src="holiday2.jpg" alt="Fish Catch Result">
+            </div>
+            <div class="gallery-item">
+                <img src="holiday3.jpg" alt="Palm Oil Harvesting">
+            </div>
+            <div class="gallery-item">
+                <img src="holiday7.jpg" alt="Palm Oil Loading">
+            </div>
+            <div class="gallery-item">
+                <img src="holiday5.jpg" alt="Palm Oil Delivery">
+            </div>
+            <div class="gallery-item">
+                <img src="holiday6.jpg" alt="Playing Volleyball">
+            </div>
+            <div class="gallery-item">
+                <img src="holiday4.jpg" alt="Evening with Friends">
+            </div>
+        </div>
+    </div>
+
+    <div class="isi">
+        <h1>my story during the boring vacation right</h1>
+        
+    <p>don't have many interesting things to tell you about <strong>my vacation</strong>. I just woke up, ate, drank, rested for a while waiting for 8 o'clock to catch fish in the river, when 8 o'clock arrived my brother and I went to catch fish using nets, after netting we were very happy because we got a lot of fish, finally we went home after feeling enough and</p>
+    
+    <p>asked my mother to cook the fish, after cooking and we had lunch with <em>a side dish of fish that I got with my brother</em>. After eating I slept, and waited to work loading palm oil after the time came I left for the field by car, as soon as I was in the field I started my work loading palm oil into the car, after the car was</p>
+    
+    <p>full I took the TBS to the ram to be weighed and after weighing I unloaded the fruit and I paid my members who worked, after I finished around 4 o'clock I continued to play <strong>volleyball with my friends</strong>, long story short it was late I went home and showered, ate, I continued to gather with my friends long story short it was 11 o'clock time to go home because I had been called from home.</p>
+    
+    <p>follow my instagramaccount <a href="https://www.instagram.com/rwl_well?igsh=aGR4d2FzbHVqM3N3">@rwl_well</a>
+    </p>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rawley Jaiang Naibaho. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
